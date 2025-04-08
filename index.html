@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Clock – Nikita Vassiljev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="clockContainer" class="clock-container">
+    <div id="clock" class="clock">00:00:00</div>
+    <div id="date" class="date">Päev, kuupäev, aasta</div>
+  </div>
+
+  <div class="customization">
+    <label>Font Size: <input type="range" id="fontSizeSlider" min="30" max="200"></label>
+    <label>Taustavärv: <input type="color" id="bgColorPicker"></label>
+    <label>Numbrite värv: <input type="color" id="textColorPicker"></label>
+    <label>Kirjatüüp:
+      <select id="fontSelector">
+        <option value="'Orbitron', sans-serif">Orbitron</option>
+        <option value="'Arial', sans-serif">Arial</option>
+        <option value="'Courier New', monospace">Courier New</option>
+      </select>
+    </label>
+    <button class="button" id="toggleFormat">Vaheta kellaformaati</button>
+    <button class="button" id="reset">Lähtesta</button>
+  </div>
+
+  <div class="footer">
+    Autor: Nikita Vassiljev • <a href="https://github.com/nvassiljev-tlu/1kodutoo" target="_blank">GitHub</a>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
